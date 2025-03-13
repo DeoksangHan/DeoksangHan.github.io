@@ -1,6 +1,7 @@
 ---
 layout: single
-title:  "Github Pages first posts!"
+title:  "ci-cd-study-start!"
 ---
 
-git 관련 
+# git 관련 
+This site was built using [GitHub Pages](https://pages.github.com/).
