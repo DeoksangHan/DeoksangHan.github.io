@@ -24,10 +24,26 @@ nginx를 이용한 무중단 배포 방법 소개
    ```
    6장 소스 기반으로 테스트용 백엔드 샘플 만들어 두기
      - https://github.com/shinsunyoung/springboot-developer/blob/main/chapter6   의 소스 보면서 책과 함께..
-     - intellij 로 실행 
+     - intellij 로 실행 : 책 182page 까지만 구현 
    postman 으로 테스트
      - localhost:8080/api/articles 로 json post 하고 : 이때 local로 api 호출시 postman desktop agent 실행해두어야 한다 
      - localhost:8080/h2-console 로 확인
+     - data.sql 만들어두고 : 189페이지 참조
+        - 포스트맨 GET 테스트
+           - localhost:8080/api/articles
+     - 한글깨짐 관련
+        Tabnine AI 설치 :deoksanghan / dshanid@naver.com / 비밀번호 자동생성 -> deoksanghan@gmail.com 에 저장 
+
  
    ```
+## [Spring Boot] Gradle jar  빌드 및 배포하기
+```
+- IntelliJ 에서는 Gradle 탭에서 간단하게 생성이 가능합니다.
+- 우측의 Gradle 탭에서 Tasks > build 안에 실행 가능한 bootJar 스크립트를 더블클릭하면 됩니다.
+- build/libs 폴더가 생성되었고, 아래와 같이 jar 파일이 생성된 것을 확인하실 수 있습니다.
+
+- 
+
+
+```
     
