@@ -32,7 +32,7 @@ nginx를 이용한 무중단 배포 방법 소개
         - 포스트맨 GET 테스트
            - localhost:8080/api/articles
      - 한글깨짐 관련
-        Tabnine AI 설치 :deoksanghan / dshanid@naver.com / 비밀번호 자동생성 -> hdeoksang@gmail.com 에 저장 
+        계정 : Tabnine AI 설치 
 
  
    ```
@@ -51,8 +51,7 @@ nginx를 이용한 무중단 배포 방법 소개
   - Git 설정 확인
      - git config --list
   - 사용자 이름, 이메일 주소 설정
-    git config --global user.email "hdeoksang@gmail.com"
-    git config --global user.name "DeoksangHan"
+    계정 : git계정-1
 2. SSH key 생성
    - ssh-keygen -t rsa -C "hdeoksang@gmail.com"
      C:\Users\진진VR/.ssh/id_rsa, id_rsa.pub 파일 생성됨
