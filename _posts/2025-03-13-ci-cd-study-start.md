@@ -21,4 +21,13 @@ nginx를 이용한 무중단 배포 방법 소개
 
 # 스프링부트3 백엔드 개발자되기 도서 참고
    https://github.com/shinsunyoung/springboot-developer
-
+   ```
+   6장 소스 기반으로 테스트용 백엔드 샘플 만들어 두기
+     - https://github.com/shinsunyoung/springboot-developer/blob/main/chapter6   의 소스 보면서 책과 함께..
+     - intellij 로 실행 
+   postman 으로 테스트
+     - localhost:8080/api/articles 로 json post 하고 : 이때 local로 api 호출시 postman desktop agent 실행해두어야 한다 
+     - localhost:8080/h2-console 로 확인
+ 
+   ```
+    
