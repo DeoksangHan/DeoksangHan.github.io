@@ -14,4 +14,11 @@ title:  "ci-cd-study-start!"
 
 # 배포 관련  
 [Nginx+Spring Boot 무중단 배포 구축하기](https://velog.io/@mw310/NginxSpring-Boot-%EB%AC%B4%EC%A4%91%EB%8B%A8-%EB%B0%B0%ED%8F%AC-%EA%B5%AC%EC%B6%95%ED%95%98%EA%B8%B0)
+```
+nginx를 이용한 무중단 배포 방법 소개
+```
+
+
+# 스프링부트3 백엔드 개발자되기 도서 참고
+   https://github.com/shinsunyoung/springboot-developer
 
