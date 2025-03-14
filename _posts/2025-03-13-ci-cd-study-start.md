@@ -32,7 +32,7 @@ nginx를 이용한 무중단 배포 방법 소개
         - 포스트맨 GET 테스트
            - localhost:8080/api/articles
      - 한글깨짐 관련
-        Tabnine AI 설치 :deoksanghan / dshanid@naver.com / 비밀번호 자동생성 -> deoksanghan@gmail.com 에 저장 
+        Tabnine AI 설치 :deoksanghan / dshanid@naver.com / 비밀번호 자동생성 -> hdeoksang@gmail.com 에 저장 
 
  
    ```
@@ -41,9 +41,50 @@ nginx를 이용한 무중단 배포 방법 소개
 - IntelliJ 에서는 Gradle 탭에서 간단하게 생성이 가능합니다.
 - 우측의 Gradle 탭에서 Tasks > build 안에 실행 가능한 bootJar 스크립트를 더블클릭하면 됩니다.
 - build/libs 폴더가 생성되었고, 아래와 같이 jar 파일이 생성된 것을 확인하실 수 있습니다.
+```
 
-- 
+## 12장 참고 CI/CD 따라 해보기
+```
+1. Git 설치 확인
+  - cmd 창에서
+     - git --version  : git version 2.44.0.windows.1
+  - Git 설정 확인
+     - git config --list
+  - 사용자 이름, 이메일 주소 설정
+    git config --global user.email "hdeoksang@gmail.com"
+    git config --global user.name "DeoksangHan"
+2. SSH key 생성
+   - ssh-keygen -t rsa -C "hdeoksang@gmail.com"
+     C:\Users\진진VR/.ssh/id_rsa, id_rsa.pub 파일 생성됨
+   -C:\Users\진진VR/.ssh/id_rsa.pub 파일  메모장으로 열어서 복사한후 
+3. 깃허브 액션 사용하기
+  3.1 깃허브 리포지터리 생성하고 코드 푸시
+    - 깃허브 홈페이지 에서 새 리포지터리 만듦
+      - https://github.com/DeoksangHan/springboot-developer
+        - https://github.com/DeoksangHan/springboot-developer.git  
+        - 리포지터리 주소 복사한후
+   3.2 인텔리제이 터미널에서 현재 프로젝트 폴더인지 확인후
+      - git init
+      - git remote add origin https://github.com/DeoksangHan/springboot-developer.git
+      - ... git push ..  단계까지 갔는데 에러남
+        remote: Invalid username or password.
+        fatal: Authentication failed for 'https://github.com/DeoksangHan/springboot-developer.git/'
+      - git push -u origin main 하니깐... 로그인 어쩌고 창이 나오면서 됨,...
 
+      - 파일 하나 수정후 해보니 잘 작동함
+         - git add .
+         - git commit -m "second try"
+         - git push origin main  
+4. 깃허브 액션 스크립트 작성하기, CI
+   - 397페이지 보면서 따라함  ci.yml 작성
+   - git add .
+   - git commit -m "CI file append"
+   - git push origin main  
+   - 이후 깃허브 페이지 에서 Actios 메뉴 화면에서 워크플로 초록색으로 변하는것 확인
+
+5. 깃허브 액션 스크립트 작성하기, CD
+   - 책에서는 AWS 에 배포하는 과정이므로 일단 중지한다 
 
 ```
+
     
