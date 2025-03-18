@@ -20,7 +20,7 @@ SSH 원격 서버에서 Docker Run
 ```
 ## 1. Jenkins Server에 Docker를 이용하여 Jenkins 실행
 ```
- - Jenkins Server 에 Docker 설치확인
+ - Jenkins Server(97번) 에 Docker 설치확인
     * mobaxterm으로 리눅스 서버에 접속후 systemctl status docker  : ok!
  -  
 ```  
