@@ -14,7 +14,7 @@ build/libs/backend-test01-1.0-SNAPSHOT.jar 파일 생성 확인 : 포트 8081로
 dshan/ci_cd_test/springboot_jar 폴더에 복사
   - Power Shell 에서
     * scp [파일명] [서버계정ID]@[서버계정IP]:[디렉토리위치]/[받을경로]
-    * scp backend-test01-1.0-SNAPSHOT.jar dshan@192.168.7.97:/home/dshan/ci_cd_test/springboot_jar
+    * scp backend-test01-1.0-SNAPSHOT.jar dshan@19....97:/home/dshan/ci_cd_test/springboot_jar
 
 
 ```
@@ -105,17 +105,17 @@ docker image build --pull=true -f "./external_files/docker/server_docker/Dockerf
 ## 3. 테스트 
 postman 으로 테스트
 ```
-- 192.168.7.97:5000/h2-console 로 확인
+- 19....97:5000/h2-console 로 확인
 - 포스트맨 GET 테스트
-  - 192.168.7.97:5000/api/articles
+  - 19....97:5000/api/articles
 - 포스트맨 POST 테스트
-  - 192.168.7.97:5000/api/articles
+  - 19....97:5000/api/articles
     {
         "title": "제목5",
         "content": "내용555"
     }
 - curl 테스트
-  - curl http://192.168.7.97:5000/api/articles
+  - curl http://19....97:5000/api/articles
 - 모두 성공함
    
 ```
